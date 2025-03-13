@@ -10,7 +10,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
     <nav
       class="navbar navbar-expand bg-body-tertiary sticky-top bg-body-tertiary"
@@ -34,8 +40,10 @@
               <a class="nav-link active" href="index.html">
                 <img
                   src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/ddp3t8x-0d9b993b-2a17-4e5f-af17-e29c853f8f0e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGRwM3Q4eC0wZDliOTkzYi0yYTE3LTRlNWYtYWYxNy1lMjljODUzZjhmMGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.SYFire4psieEW-Wdqx5cv8lPk3uCr8j6CQ_kywR7xmo"
-                  width="15">
-                  Home</a>
+                  width="15"
+                />
+                Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -47,9 +55,41 @@
         </div>
       </div>
     </nav>
-<!-------------------------------------------End Navbar----------------------------------------------------------------- -->
+    <!-- ----------------------------------------------End navbar--------------------------------------------------- -->
 
+    <div class="container mt-4">
+        <h2>The Choice is your's</h2>
+        <form id="carForm">
+            <div class="mb-3">
+                <label class="form-label">Choose a car:</label>
+                <div>
+                    <input type="radio" id="car1" name="car" value="101" required>
+                    <label for="car1">Dodge Challenger ($101/day)</label>
+                </div>
+                <div>
+                    <input type="radio" checked id="car2" name="car" value="132">
+                    <label for="car2">Subaru Impreza ($132/day)</label>
+                </div>
+                <div>
+                    <input type="radio" id="car3" name="car" value="90">
+                    <label for="car3">Toyota Yaris ($90/day)</label>
+                </div>
+            </div>
 
+            <div class="mb-3">
+                <input type="checkbox" id="insurance" name="insurance" value="57.98">
+                <label for="insurance">Add Insurance ($57.98/day)</label>
+            </div>
 
-  </body>
-</html>
+            <div class="mb-3">
+                <label for="days" class="form-label">Number of days:</label>
+                <input type="number" id="days" name="days" class="form-control" min="1" required>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="calculateTotal()">Calculate Total</button>
+        </form>
+
+        <h3 class="mt-4">Total Cost: $<span id="totalCost">0</span></h3>
+    </div>
+
+    <script src="script.js"></script>
