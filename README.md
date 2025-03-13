@@ -19,9 +19,9 @@ Tell about my project. What is it??
 ## Roadmap
 
 - [x] My plan
-- [ ] Wireframe.
-- [ ] Coding the main thread.
-- [ ] Add more car threads for options.
+- [x] Wireframe.
+- [x] Coding the main thread.
+- [x] Add more car threads for options.
 
 ## Wireframe
 
