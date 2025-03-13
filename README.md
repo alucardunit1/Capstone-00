@@ -25,7 +25,7 @@ Tell about my project. What is it??
 
 ## Wireframe
 
-An image of your wireframe (Required)
+An image of my wireframe
 ![alt text](Wireframe.png)
 
 ## Contact
