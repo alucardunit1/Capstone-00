@@ -42,5 +42,8 @@ Justin Estes - Justincodyestes@gmail.com
 * [w3schools Cards](https://www.w3schools.com/bootstrap5/bootstrap_cards.php)
 * [w3schools Navs](https://www.w3schools.com/bootstrap5/bootstrap_navs.php)
 * [Bootstrap documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) 
+*ChatGPT
+*Deepseek
+*Copilot
 
 
